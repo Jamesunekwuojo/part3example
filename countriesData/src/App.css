@@ -1,0 +1,17 @@
+.searchDiv {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+ 
+}
+
+
+.searchInput {
+  width: 160px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.countryFlag{
+  width:200px
+}
