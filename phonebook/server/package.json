@@ -1,6 +1,5 @@
 {
   "name": "server",
-
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,5 +8,8 @@
   },
   "author": "james",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
 }
