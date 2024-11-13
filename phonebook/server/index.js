@@ -7,6 +7,8 @@ const express = require('express')
 
 const app = express()
 
+// Express Middleware 
+app.use(express.json()) // Without json web server  data will not be passes and req.body will be undefined 
 
 let persons = [
   { 
@@ -56,6 +58,16 @@ app.delete('/api/persons/:id', (request, response) => {
   const id = request.params.id
   const persons = persons.filter(person => person.id !== id)
   response.status(204).end()
+})
+
+
+
+app.post('/api/persons/:id', (req, res) => {
+  const note = req.body
+  console.log(note)
+  res.json(note)
+  
+
 })
 const PORT = 3001
 app.listen(PORT, () => {
